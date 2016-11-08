@@ -1,0 +1,106 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>邢帅教育-登录注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<span class="logo">
+					<img src="img/logo-topbar.png"/>
+				</span>
+				<ul id="navlist" class="navlist">
+					<a href=""><li>首页</li></a>
+					<a href=""><li>课程</li></a>
+					<a href=""><li>微学院</li></a>
+					<a href=""><li>考证</li></a>
+					<a href=""><li>就业</li></a>
+					<a href=""><li><span class="icon">&#xe60d;</span>注册/登录</li></a>
+				</ul>
+				<div class="nav-icon">
+					<span class="list" id="list" onclick="list()">&#xe607;</span>
+					<span class="close" id="close" onclick="list()">&#xe604;</span>
+				</div>
+			</nav>
+		</header>
+		<style type="text/css">
+			.new-content{
+				width: 100%;
+			}
+			.new-content .new-content-header{
+				width: 100%;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto 100%;
+			}
+			.new-content-header .shade{
+				background: rgba(0,0,0,0.25);
+				color: #fff;
+				padding-bottom: 50px ;
+			}
+			.shade h3{
+				padding: 80px 0 20px 0;
+				text-align: center;
+			}
+			.shade .abstract{
+				width: 800px;
+				margin: 0 auto;
+				text-align: center;
+				padding-bottom: 40px;
+			}
+			.shade .new-btn{
+				width: 200px;
+				margin: 0 auto;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				border:1px solid #fff;
+				border-radius: 5px;
+			}
+			.shade .new-btn:hover{
+				background: #fff;
+				color:#009aff;
+				font-weight: 600;
+			}
+			@media only screen and (max-width: 640px) {
+				.shade .abstract{width: 100%;padding: 10px;}
+			}
+		</style>
+		<div class="new-content">
+			<div class="new-content-header">
+				<div class="shade" style="background-image:url(img/new-bg.jpg) ;">
+					<h3>WEB前端开发工程师</h3>
+					<p class="abstract">该证书获得者掌握平面设计原理，具备网页图片处理、网页动画制作、网页编辑等技能。能够熟练使用Photoshop、Flash和Dreamweaver。可从事与网页设计相关的工作。</p>
+					<p class="new-btn">立即咨询</p>
+				</div>
+			</div>
+			<div class="new-content-main">
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	
+	 function list(){
+	 	if($("#list").css('display')=="none"){
+	 		document.getElementById("list").style.display="inline-block";
+	 		document.getElementById("close").style.display="none";
+	 		$("#navlist").removeClass("navlist2");
+	 		$("#navlist").addClass("navlist");
+	 	}else{
+	 		document.getElementById("list").style.display="none";
+	 		document.getElementById("close").style.display="inline-block";
+	 		$("#navlist").removeClass("navlist");
+	 		$("#navlist").addClass('navlist2');
+	 	}
+	 }
+	 
+	 
+	</script>
+</html>

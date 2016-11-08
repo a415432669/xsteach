@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>邢帅教育</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		
+		<!--[if lt IE 9]>  
+		<script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”></script>   
+		<![endif]--> 
+
+	</head>
+	<body>
+    	<style>
+		.loading{
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			padding-top: 100px;
+			z-index: 100;
+			background-color: #fff;
+			}
+			
+        .spinner {
+  display: block;
+  margin: 0px auto;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+ 
+.cube1, .cube2 {
+  background-color: #67CF22;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+   
+  -webkit-animation: cubemove 1.8s infinite ease-in-out;
+  animation: cubemove 1.8s infinite ease-in-out;
+}
+ 
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+@-webkit-keyframes cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+ 
+@keyframes cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+        </style>
+    	<div class="loading">
+        	<div class="spinner">
+              <div class="cube1"></div>
+              <div class="cube2"></div>
+            </div>
+        </div>
+		<header>
+			<nav>
+				<span class="logo">
+					<img src="img/logo-topbar.png"/>
+				</span>
+				<ul id="navlist" class="navlist">
+					<a href=""><li>首页</li></a>
+					<a href=""><li>课程</li></a>
+					<a href=""><li>微学院</li></a>
+					<a href=""><li>考证</li></a>
+					<a href=""><li>就业</li></a>
+					<a href=""><li><span class="icon">&#xe60d;</span>注册/登录</li></a>
+				</ul>
+				<div class="nav-icon">
+					<span class="list" id="list" >&#xe607;</span>
+					<span class="close" id="close" >&#xe604;</span>
+				</div>
+			</nav>
+		</header>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" style="background-image: url(img/swiper1.jpg); background-position: center center;"></div>
+		        <div class="swiper-slide" style="background: url(img/swiper1.jpg);background-position: center center;"></div>
+		        <div class="swiper-slide" style="background: url(img/swiper1.jpg);background-position: center center;"></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <div class="swiper-scrollbar"></div>
+		</div>
+		<div class="clear">
+			
+		</div>
+		<!--
+        	作者：415432669@qq.com
+        	时间：2016-08-17
+        	描述：官网首页-字体图标加悬浮特效
+        -->
+        
+        <div class="content">
+			<div class="course-hd">
+				<h3 class="title">
+					热门科目
+				</h2>
+				<div  class="side">
+					<p>20+科目，300+课程，每天100+直播</p>
+					<a href="#">更多</a>
+				</div>
+				
+			</div>
+			<ul class="list">
+				<li class="item item-1">
+					<a href="">
+						<i class="icon">&#xe609;</i>
+						<h3>平面设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-2">
+					<a href="">
+						<i class="icon">&#xe60c;</i>
+						<h3>UI设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-3">
+					<a href="">
+						<i class="icon">&#xe615;</i>
+						<h3>室内设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-4">
+					<a href="">
+						<i class="icon">&#xe610;</i>
+						<h3>建筑设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-5">
+					<a href="">
+						<i class="icon">&#xe603;</i>
+						<h3>游戏动画</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-6">
+					<a href="">
+						<i class="icon">&#xe614;</i>
+						<h3>影视后期</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-7">
+					<a href="">
+						<i class="icon">&#xe612;</i>
+						<h3>机械设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-8">
+					<a href="">
+						<i class="icon">&#xe613;</i>
+						<h3>工业设计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-9">
+					<a href="">
+						<i class="icon">&#xe600;</i>
+						<h3>前端开发</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-10">
+					<a href="">
+						<i class="icon">&#xe60a;</i>
+						<h3>后台开发</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-11">
+					<a href="">
+						<i class="icon">&#xe605;</i>
+						<h3>淘宝电商</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-12">
+					<a href="">
+						<i class="icon">&#xe602;</i>
+						<h3>办公软件</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-13">
+					<a href="">
+						<i class="icon">&#xe60f;</i>
+						<h3>会计</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				
+				<li class="item item-14">
+					<a href="">
+						<i class="icon">&#xe606;</i>
+						<h3>外语</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-15">
+					<a href="">
+						<i class="icon">&#xe608;</i>
+						<h3>自考</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				<li class="item item-16">
+					<a href="">
+						<i class="icon">&#xe60e;</i>
+						<h3>音乐</h3>
+						<div class="into">
+							<span class="btn-into">进入科目</span>
+						</div>
+					</a>
+				</li>
+				
+				
+				
+			
+			</ul>
+		</div>
+        
+		<div class="clear"></div>
+		<div class="grey">
+			
+				
+		<div class="content">
+			<div class="course-hd">
+				<h3 class="title">
+					设计创作
+				</h2>
+				<div  class="side">
+					<p><a href="">平面设计</a></p><p><a href="">UI设计</a></p><p><a href="">室内设计</a></p><p><a href="">建筑设计</a></p><p><a href="">游戏动画</a></p><p><a href="">影视后期</a></p><p><a href="">机械设计</a></p><p><a href="">工业设计</a></p>
+					<a href="#">更多</a>
+				</div>
+			</div>
+			<ul class="design-list">
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design2.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design6.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">会计直播解答教室会计直播解答教室</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design7.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design8.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design1.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design3.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design4.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+					<div class="pic" style="background-image: url(img/design5.jpg);">
+						<div class="info">
+							<span class="time">最近直播时间：08/19 14:15</span>
+							<span class="play">直播中</span>
+						</div>
+					</div>
+					<div class="details">
+						<h3>
+							<span class="tip">公开</span>
+							<span class="design-title">电影后期特效公开体验课</span>
+						</h3>
+						<div class="row">
+							<span class="teacher">主讲人：陈鹏</span>
+							<span class="classname">影视制作</span>
+						</div>
+					</div>
+					</a>
+				</li>
+				
+			</ul>
+			<div class="clear">
+				
+			</div>
+		</div>
+		
+		</div>
+		
+		<div class="rongyu">
+			<div class="item" style="background-image: url(img/rongyu1.png);">
+				
+			</div>
+			<div class="item" style="background-image: url(img/rongyu2.png);">
+				
+			</div>
+			<div class="item" style="background-image: url(img/rongyu3.png);">
+				
+			</div>
+			<div class="item" style="background-image: url(img/rongyu4.png);">
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="grey">
+		<div class="footer">
+			<div class="footer-l">
+				<div class="footer-nav">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">加入我们</a>
+					<a href="">媒体报道</a>
+					<a href="">公司账号</a>
+				</div>
+				<div class="friendlink">
+					<p>友情链接:
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+						<a href="">IT教程网</a>
+					</p>
+				</div>
+				<div class="copyright">
+					Copyright © 2013-2016 广州邢帅教育科技有限公司 <a href="">粤ICP备13040992号</a>
+				</div>
+			</div>
+			<div class="footer-r">
+				<div class="app-download">
+					<img src="img/down-app.png"/>
+					<p>扫一扫，下载app</p>
+				</div>
+				<div class="wx-lookfor">
+					<img src="img/weixin_qcode.png"/>
+					<p>扫一扫，关注我们</p>
+				</div>
+			</div>
+			<div class="clear">
+				
+			</div>
+		</div>
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$(".loading").hide();
+		var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:5000,
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    // 如果需要滚动条
+    scrollbar: '.swiper-scrollbar',
+  })        
+})
+	$("#list").click(list);
+	$("#close").click(list);
+	 function list(){
+	 	if($("#list").css('display')=="none"){
+	 		$("#list").css({"display":"inline-block"});
+		 	$("#close").css({"display":"none"});
+	 		/*document.getElementById("list").style.display="inline-block";
+	 		document.getElementById("close").style.display="none";*/
+	 		$("#navlist").removeClass("navlist2");
+	 		$("#navlist").addClass("navlist");
+	 	}else{
+	 		$("#list").css({"display":"none"});
+		 	$("#close").css({"display":"inline-block"});
+	 		/*document.getElementById("list").style.display="none";
+	 		document.getElementById("close").style.display="inline-block";*/
+	 		$("#navlist").removeClass("navlist");
+	 		$("#navlist").addClass('navlist2');
+	 	}
+	 }
+	 
+	 
+	 
+	 
+	</script>
+</html>
